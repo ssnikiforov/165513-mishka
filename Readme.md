@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Stepan Nikiforov](https://up.htmlacademy.ru/adaptive/12/user/165513).
-* Наставник: `Неизвестно`.
+* Наставник: [Dmitry P](https://github.com/bagahunda).
 
 ---
 
