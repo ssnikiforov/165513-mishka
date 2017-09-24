@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Мишка - Главная</title>
 </head>
-<body class="modal modal--visible">
+<body>
 <header class="page-header">
     <div class="page-header__inner">
         <a class="page-header__logo" href="index.html">
@@ -58,60 +58,80 @@
             <menu class="page-header__menu category-menu">
                 <h2 class="visually-hidden">Категории продукции</h2>
                 <ul class="category-menu__list category-list">
-                    <li class="category-list__item" itemprop="name">
-                        <div class="category-list__wrapper category-list__wrapper--green">
-                            <a class="category-list__link" href="#" itemprop="url">
-                                <h3 class="category-list__header">Предметы интерьера</h3>
-                                <span class="category-list__icon category-list__icon--interior"></span>
-                            </a>
-                        </div>
+                    <li class="category-list__item category-list__item--green" itemprop="name">
+                        <a class="category-list__link" href="#" itemprop="url">
+                            <h3 class="category-list__header">Предметы интерьера</h3>
+                            <span class="category-list__icon category-list__icon--interior"></span>
+                        </a>
                     </li>
-                    <li class="category-list__item" itemprop="name">
-                        <div class="category-list__wrapper category-list__wrapper--green">
-                            <a class="category-list__link" href="#" itemprop="url">
-                                <h3 class="category-list__header">Детские игрушки</h3>
-                                <span class="category-list__icon category-list__icon--toys"></span>
-                            </a>
-                        </div>
+                    <li class="category-list__item category-list__item--green" itemprop="name">
+                        <a class="category-list__link" href="#" itemprop="url">
+                            <h3 class="category-list__header">Детские игрушки</h3>
+                            <span class="category-list__icon category-list__icon--toys"></span>
+                        </a>
                     </li>
                 </ul>
             </menu>
         </header>
         <div class="page-content__divider"></div>
         <section class="product-page">
-            <h2 class="product-page__title">Вязаные корзинки</h2>
-            <h3 class="product-page__promo-category"><span class="uppercase">Товар недели</span></h3>
-            <p class="product-page__text">
-                Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <div class="product-page__description-list product-description">
-                <p class="product-description__item">
-                    <span class="product-description__color-title">Цвет:</span>
-                    <span class="product-description__color-value">&laquo;Тиффани&raquo; / серый</span>
-                </p>
-                <p class="product-description__item product-description__item--hr"></p>
-                <p class="product-description__item">
-                    <span class="product-description__diameter-title">Диаметр:</span>
-                    <span class="product-description__diameter-value">25 см</span>
-                </p>
-                <p class="product-description__item product-description__item--hr"></p>
-                <p class="product-description__item">
-                    <span class="product-description__height-title">Высота:</span>
-                    <span class="product-description__height-value">15 см</span>
-                </p>
-                <p class="product-description__item product-description__item--hr"></p>
+            <div class="product-page__inner">
+                <h2 class="product-page__title">Вязаные корзинки</h2>
+                <h3 class="product-page__promo-category"><span class="uppercase">Товар недели</span></h3>
+                <p class="product-page__text">
+                    Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                <div class="product-page__description-list product-description">
+                    <p class="product-description__item">
+                        <span class="product-description__color-title">Цвет:</span>
+                        <span class="product-description__color-value">&laquo;Тиффани&raquo; / серый</span>
+                    </p>
+                    <p class="product-description__item product-description__item--hr"></p>
+                    <p class="product-description__item">
+                        <span class="product-description__diameter-title">Диаметр:</span>
+                        <span class="product-description__diameter-value">25 см</span>
+                    </p>
+                    <p class="product-description__item product-description__item--hr"></p>
+                    <p class="product-description__item">
+                        <span class="product-description__height-title">Высота:</span>
+                        <span class="product-description__height-value">15 см</span>
+                    </p>
+                    <p class="product-description__item product-description__item--hr"></p>
+                </div>
+                <div class="product-page__image-wrapper">
+                    <a class="product-page__image-link" href="#">
+                        <img class=product-page__image src="http://placehold.it/260x315" width="260" height="315"
+                             alt="вязаные корзинки">
+                    </a>
+                </div>
+                <div class="product-page__price price">
+                    <span class="price__header">Цена:</span>&nbsp;
+                    <span class="price__value">990</span>&nbsp;
+                    <span class="price__currency">руб.</span>
+                </div>
+                <a class="product-page__button button" href="#"><span class="uppercase">Заказать</span></a>
             </div>
-            <div class="product-page__image-wrapper">
-                <a class="product-page__image-link" href="#">
-                    <img class=product-page__image src="http://placehold.it/260x315" width="260" height="315"
-                         alt="вязаные корзинки">
-                </a>
+            <div class="modal-dialog modal-dialog--hidden cart-add">
+                <div class="modal-dialog__header">
+                    <h4 class="uppercase">Добавить в корзину</h4>
+                </div>
+                <div class="modal-dialog__body sizes">
+                    <div class="sizes__description"><span>Выберите размер</span></div>
+                    <ul class="sizes__list">
+                        <li class="sizes__item sizes__item" itemprop="name">
+                            <a class="sizes__link sizes__link" href="#" itemprop="url"><span class="uppercase">S</span></a>
+                        </li>
+                        <li class="sizes__item" itemprop="name">
+                            <a class="sizes__link" href="#" itemprop="url"><span class="uppercase">M</span></a>
+                        </li>
+                        <li class="sizes__item" itemprop="name">
+                            <a class="sizes__link" href="#" itemprop="url"><span class="uppercase">L</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-dialog__footer">
+                    <a class="cart-add__button button" href="#" itemprop="url"><span>Добавить</span></a>
+                </div>
             </div>
-            <div class="product-page__price price">
-                <span class="price__header">Цена:</span>&nbsp;
-                <span class="price__value">990</span>&nbsp;
-                <span class="price__currency">руб.</span>
-            </div>
-            <a class="product-page__button button" href="#"><span class="uppercase">Заказать</span></a>
         </section>
         <div class="page-content__divider"></div>
         <section class="page-content__about">
@@ -240,25 +260,5 @@
         </div>
     </div>
 </footer>
-<div class="modal__item modal__item--hidden cart-add">
-    <div class="cart-add__header">
-        <span class="uppercase">Добавить в корзину</span>
-    </div>
-    <div class="cart-add__sizes sizes">
-        <div class="sizes__description"><span>Выберите размер</span></div>
-        <ul class="sizes__list">
-            <li class="sizes__item sizes__item" itemprop="name">
-                <a class="sizes__link sizes__link" href="#" itemprop="url"><span class="uppercase">S</span></a>
-            </li>
-            <li class="sizes__item" itemprop="name">
-                <a class="sizes__link" href="#" itemprop="url"><span class="uppercase">M</span></a>
-            </li>
-            <li class="sizes__item" itemprop="name">
-                <a class="sizes__link" href="#" itemprop="url"><span class="uppercase">L</span></a>
-            </li>
-        </ul>
-    </div>
-    <a class="cart-add__button button" href="#" itemprop="url"><span>Добавить</span></a>
-</div>
 </body>
 </html>
