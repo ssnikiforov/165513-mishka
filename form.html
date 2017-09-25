@@ -25,7 +25,19 @@
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">
-              <span class="site-list__icon site-list__icon--search"></span>Поиск по сайту</a>
+              <span class="site-list__icon site-list__icon--search"></span>
+              <div class="site-list__search search-top">
+                <span class="search-top__cover search-top__cover--visible">Поиск по сайту</span>
+                <div class="search-top__item search-top__item--hidden">
+                  <form class="search-top__form form search-form" action="https://echo.htmlacademy.ru" method="get" id="search-form-top">
+                    <label class="search-form__query-label">
+                      <input class="search-form__query" type="text" id="query" name="query">
+                    </label>
+                    <input class="search-form__submit" type="submit" id="submit" name="submit" value="Искать">
+                  </form>
+                </div>
+              </div>
+            </a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">
@@ -53,8 +65,8 @@
         <h1 class="page-header__header">Вязание на заказ</h1>
       </div>
     </header>
-    <section class="page-content__section order-form">
-      <form class="order-form" action="https://echo.htmlacademy.ru" method="post" id="order-form">
+    <section class="page-content__section">
+      <form class="page-content__form form order-form" action="https://echo.htmlacademy.ru" method="post" id="order-form">
         <p class="order-form__greeting">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали. </p>
         <div class="order-form__item">
